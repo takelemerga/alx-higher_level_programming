@@ -7,9 +7,5 @@ def divisible_by_2(my_list=[]):
             even.append(True)
         else:
             even.append(False)
-
-    return (even)
-
-
-ls = [2, 4, 7, 22, 90, 75]
-divisible_by_2(ls)
+        i = i + 1
+    return(even)
