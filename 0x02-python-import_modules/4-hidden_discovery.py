@@ -1,12 +1,9 @@
 #!/usr/bin/python3
-# 3-infinite_add.py
-
 
 if __name__ == "__main__":
-    """Print sum of args."""
-    import sys
+    import hidden_4
 
-    sum = 0
-    for i in range(len(sys.argv) - 1):
-        sum += int(sys.argv[i + 1])
-    print("{}".format(sum))
+    names = dir(hidden_4)
+    for name in names:
+        if name[:2] != "__":
+            print(name)
