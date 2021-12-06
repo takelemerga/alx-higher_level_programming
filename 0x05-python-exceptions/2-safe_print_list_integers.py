@@ -10,7 +10,5 @@ def safe_print_list(my_list=[], x=0):
             num_elements += 1
         except (TypeError, ValueError):
             continue
-        except IndexError:
-            break
     print("")
-    return (num_elements)
+    return num_elements
