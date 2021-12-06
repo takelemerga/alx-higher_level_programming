@@ -1,5 +1,4 @@
- 101-safe_function.py
-
+#!/urs/bin/python3
 
 import sys
 
