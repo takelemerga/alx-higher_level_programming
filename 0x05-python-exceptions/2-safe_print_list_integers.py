@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 
-def safe_print_list(my_list=[], x=0):
-    ''' handles Typeerror,ValueError and but not indexerror exceptions'''
 
+def safe_print_list(my_list=[], x=0):
     num_elements = 0
     for ele in range(0, x):
         try:
