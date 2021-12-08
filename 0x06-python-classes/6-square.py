@@ -1,7 +1,10 @@
 #!/usr/bin/python3
 
+'''deine a class'''
+
 
 class Square:
+    '''body of the class'''
 
     def __init__(self, size=0, position=(0, 0)):
         self.__size = size
