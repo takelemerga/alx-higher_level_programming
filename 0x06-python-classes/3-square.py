@@ -4,6 +4,7 @@
 
 
 class Square:
+    ''' contractor'''
 
     def __init__(self, __size=0):
 
