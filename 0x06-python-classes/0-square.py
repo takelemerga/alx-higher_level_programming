@@ -2,7 +2,8 @@
 
 """ create empty class"""
 
-class Square:
-    '''empty square class'''
 
+class Square:
+
+    '''empty square class'''
     pass
