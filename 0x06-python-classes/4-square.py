@@ -1,7 +1,10 @@
 #!/usr/bin/python3
 
+'''deine class square'''
+
 
 class Square:
+    '''constractor'''
 
     def __init__(self, __size=0):
         self.__size = __size
