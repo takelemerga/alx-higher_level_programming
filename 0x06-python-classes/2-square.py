@@ -1,8 +1,14 @@
 #!/usr/bin/python3
 
+
 class Square:
 
+    """define class square"""
+
     def __init__(self, size=0):
+
+        """constractor"""
+
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         elif size < 0:
