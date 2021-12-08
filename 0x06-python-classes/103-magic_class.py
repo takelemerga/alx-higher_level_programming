@@ -1,8 +1,11 @@
 #!/usr/bin/python3
 import math
 
+'''class defined'''
+
 
 class MagicClass:
+
     ''' body of class '''
 
     def __init__(self, radius=0):
