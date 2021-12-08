@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 
-"""define class node"""
+'''define class node'''
 
 
 class Node:
 
-    """body of the class"""
+    '''body of the class'''
 
     def __init__(self, data, next_node=None):
         self.data = data
