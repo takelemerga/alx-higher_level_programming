@@ -1,8 +1,10 @@
 #!/usr/bin/python3
+
 """define class node"""
 
 
 class Node:
+
     """body of the class"""
 
     def __init__(self, data, next_node=None):
