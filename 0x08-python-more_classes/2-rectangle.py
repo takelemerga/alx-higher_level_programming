@@ -4,9 +4,9 @@
 
 
 class Rectangle:
-    """Defines the python class 'Rectangle.'
-       sets and gets the private instance variables
-       calculate and return the area and paramiter
+    """Defines the python class Rectangle.
+       sets and gets the private instance variables.
+       calculate and return the area and paramiter.
     """
 
     def __init__(self, width=0, height=0):
@@ -44,7 +44,7 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
-         """sets the height of the created rectagle object.
+        """sets the height of the created rectagle object.
            raiseError:
                      TypeError or ValueError if any one occured
         """
