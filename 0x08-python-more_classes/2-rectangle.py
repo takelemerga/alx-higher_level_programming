@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""a simple python class.
+"""a simple python class program written.
 """
 
 
