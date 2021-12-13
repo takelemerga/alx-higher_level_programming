@@ -3,7 +3,7 @@
 """
 
 class Rectangle:
-    """Defines the python class 'Rectangle.'
+    """Defines the python class Rectangle.
        sets and gets the private instance variables 
     """
 
