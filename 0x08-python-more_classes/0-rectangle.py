@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-This simple code is a python class 
+this simple code is a python class
 """
 
 
