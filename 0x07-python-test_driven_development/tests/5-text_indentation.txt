@@ -1,0 +1,41 @@
+Test cases for '5-text_indentation.py'
+=================================
+
+prints a text with 2 new lines after each of these characters: ., ? and :
+-------------------------------------------------------------------------
+
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+#...............Cases to be evaluated....................
+
+Case #1: test argument being a number.
+>>> text_indentation(98)
+Traceback (most recent call last):
+TypeError: text must be a string
+
+Case #2: test no argument.
+>>> text_indentation()
+Traceback (most recent call last):
+TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+Case #3: test argument being Null.
+>>> text_indentation(None)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+
+Case #4: test passing an empty string.
+>>> text_indentation("")
+
+Case #6: test the characters to insert '\n'
+>>> text_indentation(".?:")
+.
+<BLANKLINE>
+?
+<BLANKLINE>
+:
+<BLANKLINE>
+Case #7: more than one string
+>>> text_indentation("str1", "str2")
+Traceback (most recent call last):
+TypeError: text_indentation() takes 1 positional argument but 2 were given

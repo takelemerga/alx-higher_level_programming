@@ -1,0 +1,94 @@
+Test cases for '0-add_integer.py'
+=================================
+
+Adds two integers, with the function 'add_integer'
+--------------------------------------------------
+
+Import 'add_integer'
+>>> add_integer = __import__('0-add_integer').add_integer
+
+Cases to be evaluated:
+....................basic cases....................
+case #1: adds two integer arguments
+>>> add_integer(4, 10)
+14
+case #2: adds two float numbers
+>>> add_integer(4.5, 10.6)
+14
+case #3 adds with one positinal argument
+>>> add_integer(-4.5)
+94
+Case #4: test with zero arguments
+>>> add_integer()
+Traceback (most recent call last):
+...
+TypeError: add_integer() missing 1 required positional argument: 'a'
+
+..................edge cases (type errors).............
+
+Case #5: test Null variable to 'a'
+>>> add_integer(None, -10)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+Case #6: test Null variable to 'b'
+>>> add_integer(-10, None)
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
+
+Case #7: test Null for both variables
+>>> add_integer(None, None)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+Case #8: test passing more than 2 argument
+>>> add_integer(5, 7, -1)
+Traceback (most recent call last):
+...
+TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
+
+Case #9: test 'a' such as string (int(b)).
+>>> add_integer("string", 98)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+Case #10: test 'b' such as string (int(a)).
+>>> add_integer(98, "string")
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
+
+Case #11: test 'a' and 'b' such as string.
+>>> add_integer("12", "string")
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+Case #12: test adding complex number to 'a', the same response apply to 'b'.
+>>> add_integer(1+2j, 2)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+case #13: testing data structure arguments
+>>> add_integer([1, 2], {1:2, 3:4})
+Traceback (most recent call last):
+...
+TypeError: a must be an integer 
+
+Case #14: test adding an infinity number as an argument.
+>>> add_integer(float('inf'), 1)
+Traceback (most recent call last):
+...
+OverflowError: cannot convert float infinity to integer
+case #15: testing overflow
+>>> add_integer(100e1000, 1)
+Traceback (most recent call last):
+OverflowError: cannot convert float infinity to integer
+case #16: test value error
+add_integer(float('nan'), 0)
+Traceback (most recent call last):
+ValueError: cannot convert float NaN to integer 
