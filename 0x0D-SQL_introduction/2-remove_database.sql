@@ -1,3 +1,2 @@
---script that removes database hbtn_0c_0
---script should not fail if hbtn_0c_0 does not exist.
+--SQL command that removes database hbtn_0c_0
 DROP DATABASE IF EXISTS hbtn_0c_0; 
