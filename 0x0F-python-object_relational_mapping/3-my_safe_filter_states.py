@@ -1,11 +1,12 @@
 #!/usr/bin/python3
 
-import MySQLdb
-from sys import argv
 """
   displays all values in the states table of hbtn_0e_0_usa
   that is safe from MySQL injections
 """
+
+import MySQLdb
+from sys import argv
 
 if __name__ == '__main__':
 
