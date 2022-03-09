@@ -13,7 +13,7 @@ Base = declarative_base()
 
 
 class State(Base):
-    """ 
+    """
     maps to table states
     """
     __tablename__ = 'states'
