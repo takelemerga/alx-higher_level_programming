@@ -1,1 +1,1 @@
-basic javascript exercises
+these are the basic javascript exercises
