@@ -1,4 +1,5 @@
 #!/usr/bin/node
+
 const args = require('process');
 const arg2 = parseInt(args.argv[2]);
 if (isNaN(arg2)) {
