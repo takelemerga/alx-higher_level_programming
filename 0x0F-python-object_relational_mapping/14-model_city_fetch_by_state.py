@@ -3,6 +3,7 @@
 lists all City objects from the database hbtn_0e_6_usa
 """
 from sys import argv
+
 from model_city import Base, City
 from model_state import Base, State
 from sqlalchemy import create_engine
