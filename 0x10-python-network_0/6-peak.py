@@ -15,14 +15,11 @@ def find_peak(list_of_integers):
         return (numbr[0])
     if length == 2:
         return numbr[0] if numbr[0] >= numbr[1] else numbr[1]
-
-    for idx in range(0, length):
-        value = numbr[idx]
-        if (idx > 0 and idx < length - 1 and
-                numbr[idx + 1] <= value and numbr[idx - 1] <= value):
-            return value
-        elif idx == 0 and numbr[idx + 1] <= value:
-            return value
-        elif idx == length - 1 and numbr[idx - 1] <= value:
-            return value
-    return pick
+    mid = int(length / 2)
+    peak = list_of_integers[mid]
+    if peak > list_of_integers[mid - 1] and peak > list_of_integers[mid + 1]:
+        return peak
+    elif peak < list_of_integers[mid - 1]:
+        return find_peak(list_of_integers[:mid])
+    else:
+        return find_peak(list_of_integers[mid + 1:])
