@@ -14,5 +14,5 @@ def postemail():
     print('{}'.format(response.text))
 
 
-if __name__ == "__main__"":
+if __name__ == "__main__":
     postemail()
