@@ -10,9 +10,9 @@ import sys
 
 
 def postemail():
-    """sends post"""
+    """sends post request"""
     email = {'email': sys.argv[2]}
-    response = requests.post(sys.argv[1], email)
+    response = requests.post(sys.argv[1], arg=email)
     print('{}'.format(response.text))
 
 
