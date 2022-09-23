@@ -4,7 +4,7 @@ import urllib.request
 
 
 def fetch_url():
-    """fetch the url"""
+    """ fun defintion to fetch the url"""
     url = 'https://alx-intranet.hbtn.io/status'
     with urllib.request.urlopen(url) as response:
         html = response.read()
