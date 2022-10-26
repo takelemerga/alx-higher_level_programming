@@ -1,4 +1,4 @@
-// fetches and prints how to say “Hello” depending on the language
+// fetch and prints how to say “Hello” depending on the language
 function translatelang () {
   const value = $('INPUT#language_code').val();
   $.getJSON('https://fourtonfish.com/hellosalut/?lang=' + value, (data) => {
