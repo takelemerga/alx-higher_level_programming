@@ -1,4 +1,4 @@
-// fetches and lists the title for all movies
+// fetches and lists the title for all given movies
 
 $(() => {
   $.get('https://swapi-api.hbtn.io/api/films/?format=json', (url, status) => {
