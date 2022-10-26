@@ -1,4 +1,4 @@
-// displays the value of hello
+// fetch url and displays the value of hello
 
 $(() => {
   $.get('https://fourtonfish.com/hellosalut/?lang=fr', (url, status) => {
