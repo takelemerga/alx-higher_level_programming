@@ -1,4 +1,4 @@
-// adds, removes and clears LI elements from a list when the user clicks
+// adds, removes and clears LI elements from a list when the user click
 
 document.addEventListener('DOMContentLoaded', function () {
   $('DIV#add_item').click(function () {
